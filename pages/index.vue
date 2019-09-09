@@ -85,13 +85,18 @@ export default {
   }),
 
   beforeMount() {
-    this.getRandomActivity()
+    this.initRandomActivity()
   },
 
   methods: {
-    async getRandomActivity() {
+    async initRandomActivity() {
       const { data } = await this.$axios.get(`activity`)
       this.item = data
+    },
+
+    async getRandomActivity() {
+      // const { data } = await this.$axios.get(`activity`)
+      // this.item = data
     }
   }
 }
