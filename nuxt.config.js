@@ -52,7 +52,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: 'http://www.boredapi.com/api/'
+    baseURL: 'https://www.boredapi.com/api/'
   },
   /*
    ** Build configuration
